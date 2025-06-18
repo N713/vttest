@@ -1,0 +1,22 @@
+@use 'variables';
+
+body {
+  font-family: variables.$mabry;
+  background-color: variables.$white;
+  color: variables.$dark;
+   font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2, h3 {
+  font-family: variables.$CoFo;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}

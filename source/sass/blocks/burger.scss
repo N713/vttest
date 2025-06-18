@@ -1,0 +1,65 @@
+@use "variables";
+
+.burger {
+    background-color: variables.$blue;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+
+    &__line {
+        display: block;
+        width: 14px;
+        height: 2px;
+        background-color: variables.$white;
+        transition: background-color 0.2s;
+        position: relative;
+
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            width: 14px;
+            height: 2px;
+            background-color: variables.$white;
+            transition: all 0.2s;
+            position: absolute;
+            left: 0;
+        }
+
+        &::before {
+            top: -6px;
+        }
+
+        &::after {
+            bottom: -6px;
+        }
+    }
+
+    &:hover {
+        background-color: variables.$dark;
+    }
+
+    &.active {
+        .burger__line {
+            background-color: transparent;
+
+            &::before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                bottom: 0;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

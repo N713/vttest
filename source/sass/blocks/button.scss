@@ -1,0 +1,33 @@
+@use '../variables';
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+    border-radius: 40px;
+    min-width: 132px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+
+    &--black {
+        background-color: variables.$dark;
+        color: variables.$white;
+
+        &:hover {
+            background-color: variables.$white;
+            color: variables.$dark;
+        }
+    }
+    
+    &--white {
+        background-color: variables.$white;
+        color: variables.$dark;
+        border: 2px solid variables.$blue;
+
+        &:hover {
+            background-color: variables.$dark;
+            color: variables.$white;
+        }
+    }
+}
