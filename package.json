@@ -30,7 +30,7 @@
     "posthtml-include": "^1.7.4",
     "smoothscroll-polyfill": "^0.4.4",
     "stylelint": "^16.2.1",
-    "swiper": "^11.0.6",
+    "swiper": "^11.2.8",
     "tiny-slider": "^2.9.4",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12",

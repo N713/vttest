@@ -1,0 +1,75 @@
+@use '../variables';
+
+.apply {
+    padding: 50px 0;
+
+    &__text {
+        margin-bottom: 60px;
+    }
+
+    &__header {
+        margin-bottom: 20px;
+    }
+
+    &__paragraph {
+        margin-bottom: 20px;
+        font-family: variables.$CoFo;
+    }
+
+    &__paragraph:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    &__list-item {
+        margin-bottom: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &__list-image {
+        width: 100%;
+    }
+
+    &__list-wrapper {
+        background-color: variables.$white;
+        padding: 25px 20px;
+    }
+
+    &__list-answer,
+    &__list-header,
+    &__list-tel {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    &__list-answer {
+        color: #9F9F9F;
+        font-size: 17px;
+        line-height: 24px;
+        font-family: variables.$CoFo;
+        transition: color 0.2s;
+
+        &:hover {
+            color: variables.$blue;
+        }
+    }
+
+    &__list-header {
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    &__list-tel {
+        cursor: pointer;
+        line-height: 30px;
+        transition: color 0.2s;
+
+        &:hover {
+            color: variables.$blue;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@use '../variables';
+
+.link {
+    position: relative;
+    color: variables.$blue;
+    font-family: variables.$CoFo;
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.2s;
+
+    &:hover {
+        font-weight: bold;
+    }
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 50%;
+        transition: all 0.2s;
+    }
+
+    &::after {
+        background-color: variables.$blue;
+        width: 20px;
+        height: 2px;
+        right: -30px;
+    }
+
+    &::before {
+        width: 8px;
+        height: 8px;
+        border: 2px solid variables.$blue;
+        border-left: none;
+        border-bottom: none;
+        right: -30px;
+        transform: rotate(45deg);
+        top: 35%;
+    }
+
+    &:hover::after {
+        right: -35px;
+    }
+
+    &:hover::before {
+        right: -35px;
+    }
+}

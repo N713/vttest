@@ -1,0 +1,63 @@
+@use '../variables';
+
+.info {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: variables.$dark;
+    color: variables.$white;
+
+    &__text {
+        padding: 50px 20px;
+    }
+
+    &__quiz {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        padding: 6px 12px;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        border-radius: 32px;
+        font-size: 15px;
+        font-family: variables.$CoFo;
+        margin-bottom: 24px;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: variables.$blue;
+        }
+    }
+
+    &__header {
+        font-size: 45px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__tel {
+        display: block;
+        font-size: 24px;
+        transition: color 0.2s;
+        margin-bottom: 15px;
+
+        &:hover {
+            color: variables.$blue;
+        }
+    }
+
+    &__paragraph {
+        margin-bottom: 24px;
+    }
+
+    &__button {
+        min-width: 180px;
+
+        &:hover {
+            box-shadow: none;
+            background-color: variables.$white;
+            color: variables.$blue;
+        }
+    }
+}

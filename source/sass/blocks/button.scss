@@ -9,6 +9,14 @@
     min-width: 132px;
     box-sizing: border-box;
     transition: all 0.2s;
+    background-color: variables.$blue;
+    color: variables.$white;
+
+    &:hover {
+        -webkit-box-shadow: 0px 14px 30px 0px rgba(117, 87, 255, 0.2);
+        -moz-box-shadow: 0px 14px 30px 0px rgba(117, 87, 255, 0.2);
+        box-shadow: 0px 14px 30px 0px rgba(117, 87, 255, 0.2);
+    }
 
     &--black {
         background-color: variables.$dark;
@@ -19,7 +27,7 @@
             color: variables.$dark;
         }
     }
-    
+
     &--white {
         background-color: variables.$white;
         color: variables.$dark;

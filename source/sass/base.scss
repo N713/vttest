@@ -4,7 +4,8 @@ body {
   font-family: variables.$mabry;
   background-color: variables.$white;
   color: variables.$dark;
-   font-size: 18px;
+  font-size: 18px;
+  overflow-x: hidden;
 }
 
 a {
@@ -12,11 +13,25 @@ a {
   color: inherit;
 }
 
+h2 {
+  font-size: 40px;
+}
+
 h2, h3 {
-  font-family: variables.$CoFo;
   font-weight: 700;
 }
 
 img {
   max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+p a {
+  color: variables.$blue;
+  transition: font-weight;
+
+  &:hover {
+    font-weight: bold;
+  }
 }
