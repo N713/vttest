@@ -7,6 +7,7 @@
     padding: 20px;
     border-radius: 40px;
     min-width: 132px;
+    width: 180px;
     box-sizing: border-box;
     transition: all 0.2s;
     background-color: variables.$blue;
@@ -43,6 +44,15 @@
 @media (min-width: variables.$tablet-1) {
     .button {
         font-size: 20px;
-        padding: 22px 40px;
+        padding: 22px 34px;
+        width: auto;
+    }
+}
+
+@media (min-width: variables.$desktop-1) {
+    .button {
+        &--white {
+            width: 216px;
+        }
     }
 }

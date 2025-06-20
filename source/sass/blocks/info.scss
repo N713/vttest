@@ -7,7 +7,7 @@
     color: variables.$white;
 
     &__text {
-        padding: 50px 20px;
+        padding: 50px 20px 58px;
     }
 
     &__quiz {
@@ -46,7 +46,7 @@
         display: block;
         font-size: 24px;
         transition: color 0.2s;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
 
         &:hover {
             color: variables.$blue;
@@ -54,7 +54,8 @@
     }
 
     &__paragraph {
-        margin-bottom: 24px;
+        margin-bottom: 26px;
+        letter-spacing: -1px;
     }
 
     &__button {
@@ -71,7 +72,7 @@
 @media (min-width: variables.$tablet-1) {
     .info {
         &__quiz {
-            font-size: 17px;
+            font-size: 18px;
             width: 210px;
         }
 
@@ -137,6 +138,14 @@
 
         &__text {
             padding: 40px 160px;
+        }
+
+        &__header {
+            margin-bottom: 30px;
+        }
+
+        &__button {
+            min-width: 132px;
         }
     }
 }
