@@ -24,6 +24,7 @@
         padding: 20px 0 0 0;
         transition: right 0.2s;
         min-height: 100dvh;
+        z-index: 10;
     }
 
     &__nav.hidden {
@@ -35,6 +36,8 @@
         padding: 20px;
         color: variables.$white;
         border-bottom: 1px solid variables.$white;
+        font-family: variables.$CoFo;
+        font-weight: 500;
     }
 
     &__menu {
@@ -47,6 +50,81 @@
 
     &__button {
         display: inline-block;
-        margin: 0 20px 0 0;
+        margin: 0 20px 5px 0;
+    }
+}
+
+@media (min-width: variables.$tablet-1) {
+    .header {
+        &__logo {
+            max-width: 100%;
+        }
+
+        &__link {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width: variables.$desktop) {
+    .header {
+        &__nav {
+            position: relative;
+            min-height: auto;
+            background: none;
+            color: variables.$dark;
+            padding: 0;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        &__nav.hidden {
+            right: 0;
+        }
+
+        &__link {
+            color: variables.$dark;
+            padding: 20px 0;
+            
+            &:hover {
+                border-bottom: 2px solid variables.$blue;
+            }
+        }
+
+        &__menu {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        &__button,
+        &__buttons {
+            padding: 0;
+        }
+
+        &__button {
+            margin: 0 0 0 30px;
+        }
+
+        &__buttons {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        &__item {
+            margin: 0 0 0 10px;
+        }
+    }
+}
+
+@media (min-width: variables.$desktop-1) {
+    .header {
+        &__item {
+            margin: 0 0 0 50px;
+        }
     }
 }

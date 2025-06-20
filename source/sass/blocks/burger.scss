@@ -12,6 +12,7 @@
     border-radius: 100%;
     cursor: pointer;
     position: relative;
+    z-index: 100;
 
     &__line {
         display: block;
@@ -61,5 +62,11 @@
                 transform: rotate(-45deg);
             }
         }
+    }
+}
+
+@media (min-width: variables.$desktop) {
+    .burger {
+        display: none;
     }
 }

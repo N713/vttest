@@ -19,7 +19,7 @@
         background-color: rgba(255, 255, 255, 0.2);
         box-sizing: border-box;
         border-radius: 32px;
-        font-size: 15px;
+        font-size: 16px;
         font-family: variables.$CoFo;
         margin-bottom: 24px;
         transition: background-color 0.2s;
@@ -34,6 +34,12 @@
         font-weight: 500;
         line-height: 40px;
         margin-bottom: 20px;
+    }
+
+    &__quiz,
+    &__header,
+    &__tel {
+        letter-spacing: -1px;
     }
 
     &__tel {
@@ -58,6 +64,87 @@
             box-shadow: none;
             background-color: variables.$white;
             color: variables.$blue;
+        }
+    }
+}
+
+@media (min-width: variables.$tablet-1) {
+    .info {
+        &__quiz {
+            font-size: 17px;
+            width: 210px;
+        }
+
+        &__header {
+            font-size: 70px;
+            line-height: 59px;
+        }
+
+        &__tel {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        &__paragraph {
+            font-size: 20px;
+        }
+
+        &__paragraph {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width: variables.$desktop) {
+    .info {
+        flex-direction: row;
+
+        &__header {
+            font-size: 45px;
+            line-height: 1;
+        }
+
+        &__text {
+            padding: 40px 20px;
+        }
+
+        &__image {
+            img {
+                display: block;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: variables.$desktop-1) {
+    .info {
+        &__header {
+            font-size: 70px;
+            line-height: 59px;
+        }
+
+        &__text {
+            max-width: 756px;
+        }
+    }
+}
+
+@media (min-width: variables.$desktop-2) {
+    .info {
+        max-width: variables.$maxWidth;
+        margin: 0 auto;
+
+        &__text {
+            padding: 40px 160px;
+        }
+    }
+}
+
+@media (min-width: variables.$maxWidth) {
+    .info {
+        &__text {
+            padding: 140px 65px 140px 160px;
         }
     }
 }

@@ -5,3 +5,9 @@
     padding: 0 20px;
     margin: 0 auto;
 }
+
+@media (min-width: variables.$desktop-2) {
+    .wrapper {
+        padding: 0 160px;
+    }
+}

@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: "CoFo Sans";
+  src: url("../fonts/CoFoSans-Medium.woff2") format("woff2"),
+  url("../fonts/CoFoSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Mabry Pro";
   src: url("../fonts/MabryPro-Regular.woff2") format("woff2"),
   url("../fonts/MabryPro-Regular.woff") format("woff");

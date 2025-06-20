@@ -1,11 +1,22 @@
 @use 'variables';
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: lightgray;
+}
+
 body {
   font-family: variables.$mabry;
-  background-color: variables.$white;
   color: variables.$dark;
   font-size: 18px;
   overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 a {
@@ -34,4 +45,10 @@ p a {
   &:hover {
     font-weight: bold;
   }
+}
+
+.header,
+.main {
+  max-width: variables.$maxWidth;
+  margin: 0 auto;
 }

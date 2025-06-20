@@ -39,3 +39,10 @@
         }
     }
 }
+
+@media (min-width: variables.$tablet-1) {
+    .button {
+        font-size: 20px;
+        padding: 22px 40px;
+    }
+}
